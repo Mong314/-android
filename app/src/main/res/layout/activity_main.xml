@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="대기 중"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/minutesInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="몇 분 뒤에 끌지 입력 (예: 30)"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="타이머 시작" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="취소" />
+
+    <Button
+        android:id="@+id/openTimerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="시계 타이머 열기" />
+
+    <Button
+        android:id="@+id/requestAdminButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="화면 잠금 권한 등록 (비루트 대비책)" />
+
+</LinearLayout>
